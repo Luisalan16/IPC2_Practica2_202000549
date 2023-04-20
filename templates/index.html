@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="/static/estilos.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Introducción a la Programación de Computadoras 2</h2>
+            </div>
+            <ul class="nav__link">
+                <li class="nav__items">
+                    <a href="{{url_for('home.hojaVida')}}" class="nav__links">Comenzar</a>
+                </li>
+                <img src="/static/img/arrow.svg" alt="close">
+                <div class="nav__menu">
+                </div>
+            </ul>
+        </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title">Práctica 2</h1>
+            <a href="{{url_for('home.hojaVida')}}" class="cta">Comenzar</a>
+        </section>
+    </header>
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">Información</h2>
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="/static/img/user.svg" alt="user" class="about__icon">
+                    <h3 class="about__title">Desarrollador</h3>
+                    <p class="about__paragraph">Luis Daniel Salán Letona</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="/static/img/user2.svg" alt="user" class="about__icon">
+                    <h3 class="about__title">Auxiliar</h3>
+                    <p class="about__paragraph">Daniel Alfaro Gaitán</p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
